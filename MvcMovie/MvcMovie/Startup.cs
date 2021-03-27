@@ -51,6 +51,8 @@ namespace MvcMovie
 
       app.UseAuthorization();
 
+      app.UseLogger();
+
       app.UseEndpoints(endpoints =>
       {
         endpoints.MapControllerRoute(

@@ -6,11 +6,16 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MvcMovie.Models
 {
+  //Добавление поиска по жанру
   public class MovieGenreViewModel
   {
-      public List<Movie> Movies { get; set; }
-      public SelectList Genres { get; set; }
-      public string MovieGenre { get; set; }
-      public string SearchString { get; set; }
+    //Список фильмов.
+    public List<Movie> Movies { get; set; }
+    //Объект SelectList со списком жанров. В этом списке пользователь может выбрать жанр фильма.
+    public SelectList Genres { get; set; }
+    //Объект MovieGenre, содержащий выбранный жанр.
+    public string MovieGenre { get; set; }
+    //SearchString, содержащий текст, который пользователи вводят в поле поиска.
+    public string SearchString { get; set; }
   }
 }

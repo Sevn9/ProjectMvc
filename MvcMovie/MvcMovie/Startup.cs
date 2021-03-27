@@ -26,6 +26,7 @@ namespace MvcMovie
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddControllersWithViews();
+
       services.AddDbContext<MvcMovieContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
     }
@@ -39,7 +40,7 @@ namespace MvcMovie
       }
       else
       {
-        app.UseExceptionHandler("/Movies/Error");
+        app.UseExceptionHandler("/Home/Error");
         // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
         app.UseHsts();
       }
@@ -54,7 +55,7 @@ namespace MvcMovie
       {
         endpoints.MapControllerRoute(
                   name: "default",
-                  pattern: "{controller=Movies}/{action=Index}/{id?}");
+                  pattern: "{controller=Home}/{action=Index}/{id?}");
       });
     }
   }

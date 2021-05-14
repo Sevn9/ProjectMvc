@@ -29,6 +29,7 @@ namespace MvcMovie.Models
               ReleaseDate = DateTime.Parse("1989-2-12"),
               Genre = "Romantic Comedy",
               Rating = "R",
+              Quality = "720",
               Price = 7.99M
             },
 
@@ -38,6 +39,7 @@ namespace MvcMovie.Models
               ReleaseDate = DateTime.Parse("1984-3-13"),
               Genre = "Comedy",
               Rating = "R",
+              Quality = "720",
               Price = 8.99M
             },
 
@@ -47,6 +49,7 @@ namespace MvcMovie.Models
               ReleaseDate = DateTime.Parse("1986-2-23"),
               Genre = "Comedy",
               Rating = "R",
+              Quality = "360",
               Price = 9.99M
             },
 
@@ -56,6 +59,7 @@ namespace MvcMovie.Models
               ReleaseDate = DateTime.Parse("1959-4-15"),
               Genre = "Western",
               Rating = "R",
+              Quality = "480",
               Price = 3.99M
             }
         );

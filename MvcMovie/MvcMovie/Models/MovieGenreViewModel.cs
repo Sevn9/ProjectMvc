@@ -17,5 +17,11 @@ namespace MvcMovie.Models
     public string MovieGenre { get; set; }
     //SearchString, содержащий текст, который пользователи вводят в поле поиска.
     public string SearchString { get; set; }
+    //----------------------------------------
+    public SelectList Quality { get; set; }
+    public string MovieQuality { get; set; }
+    public SelectList Date { get; set; }
+    public int ReleaseDate { get; set; }
+
   }
 }
